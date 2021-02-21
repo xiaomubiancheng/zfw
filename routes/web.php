@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('admin.login.login');
 });
+
+//引入定义好的后台路由文件
+include base_path('routes/admin/admin.php');
 
 
 
